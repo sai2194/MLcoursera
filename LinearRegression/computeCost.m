@@ -7,7 +7,6 @@ function J = computeCost(X, y, theta)
 m = length(y); % number of training examples
 predictions = X*theta;
 sqErrors = (predictions-y).^2;
-% You need to return the following variables correctly 
 J = 1/(2*m)*sum(sqErrors);
 
 end
